@@ -62,5 +62,66 @@ header {
   transition: 0.22s;
   border-radius: 50px;
   margin: 0 5px;
+}
+.navbar ul li a:hover {
+  color: #11101b;
+  background: #fefefe;
+}
 
+.navbar ul li a.active {
+  color: #11101b;
+  background: #fefefe;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/* Media Queries                                 */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .dropdown {
+    cursor: pointer;
+    display: block;
+  }
+  .dropdown .line {
+    height: 3px;
+    width: 33px;
+    margin: 6px 0;
+    background: #fefefe;
+  }
+  .navbar {
+    overflow: hidden;
+    height: 450px;
+    position: absolute;
+    transition: 0.22s;
+    background: #11101b;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+  }
+
+  .navbar ul {
+    transition: 0.55s;
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    opacity: 0;
+  }
+  .navbar ul li a {
+    margin-bottom: 12px;
+
+  }
 }
