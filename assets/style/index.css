@@ -46,7 +46,7 @@ header {
   color: #fefefe;
 }
 
-.hamburger {
+.dropdown {
   display: none;
 }
 
@@ -90,19 +90,22 @@ header {
 }
 
 @media (max-width: 900px) {
+  
   .dropdown {
     cursor: pointer;
     display: block;
   }
+
   .dropdown .line {
     height: 3px;
     width: 33px;
     margin: 6px 0;
     background: #fefefe;
   }
+
   .navbar {
     overflow: hidden;
-    height: 450px;
+    height: 0;
     position: absolute;
     transition: 0.22s;
     background: #11101b;
@@ -110,6 +113,10 @@ header {
     left: 0;
     right: 0;
     width: 100vw;
+  }
+  
+  .navbar.active {
+    height: 450px;
   }
 
   .navbar ul {
@@ -120,6 +127,11 @@ header {
     text-align: center;
     opacity: 0;
   }
+
+  .navbar.active ul {
+    opacity: 1;
+  }
+
   .navbar ul li a {
     margin-bottom: 12px;
 
