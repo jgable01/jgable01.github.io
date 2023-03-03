@@ -29,6 +29,10 @@ body {
   margin-top: 60px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - */
 /* Header                                        */
 /* - - - - - - - - - - - - - - - - - - - - - - - */
@@ -239,6 +243,10 @@ header {
 /* Contact                                       */
 /* - - - - - - - - - - - - - - - - - - - - - - - */
 
+#contact {
+  padding: 70px 0;
+}
+
 .title-contact {
   color: #fff;
   font-size: 60px;
@@ -247,7 +255,6 @@ header {
 
 .contact {
   flex-basis: 100%;
-  padding: 60px;
 }
 
 .contact p {
