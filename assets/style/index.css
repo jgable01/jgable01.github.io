@@ -18,6 +18,9 @@ h2 {
 
 body {
   background-color: var(--app-bg-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -195,6 +198,7 @@ header {
 }
 
 .project1, .project2, .project3 {
+  padding: 15px;
   border-radius: 13px;
   background-color: #11101b;
   position: relative;
@@ -230,3 +234,138 @@ header {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/* Contact                                       */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+.title-contact {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.contact {
+  flex-basis: 100%;
+  padding: 60px;
+}
+
+.contact p {
+  color: #fff;
+  font-size: 17px;
+}
+
+.contact p i {
+  color: #ababab;
+  margin-right: 13px;
+  font-size: 25px;
+  text-align: start;
+  width: max-content;
+  transition: transform 0.33s;
+}
+
+.socials {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials a, .fa-envelope {
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  justify-content: space-between;
+  transition: transform 0.33s;
+}
+
+.fa-envelope {
+  padding: 0;
+}
+
+.socials a:hover, .contact p i:hover {
+  transform: translateY(-4px);
+  color: rgba(255, 255, 255, 0.77);
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+/* Footer                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - */
+
+footer {
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 15px;
+  color: #fff;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 32px;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.footer-socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 20px 0;
+}
+
+.footer-socials li {
+  margin: 0 10px;
+}
+
+.footer-socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-socials a i {
+  font-size: 18px;
+  transition: color .4s ease;
+
+}
+
+.footer-socials a:hover i {
+  color: #e9e3e3
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
